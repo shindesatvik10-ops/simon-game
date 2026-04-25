@@ -86,6 +86,17 @@ function btnpress() {
     console.log(userseq);
     checkSeq(userseq.length - 1);
 }
+// Desktop ke liye
+document.addEventListener("keydown", startGame);
+
+// Mobile ke liye
+document.addEventListener("touchstart", startGame);
+
+// Function
+function startGame() {
+    console.log("Game Started");
+    // yaha tumhara game start logic
+}
 
 // Attach click listeners to all buttons
 let allBtns = document.querySelectorAll(".btn");
